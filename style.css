@@ -1,0 +1,135 @@
+* {
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-container {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    /* background-color: rgba(255, 0, 0, 0.47); */
+    height: 500px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: -30px;
+
+}
+
+.small {
+    position: relative;
+    /* background-color: rgb(0, 213, 255); */
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: GFG2 5s infinite linear;
+    position: absolute;
+}
+
+
+.moon {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 0px;
+    animation: GFG 2s infinite linear;
+}
+
+.earth {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* background-color: rgb(255, 0, 0); */
+    position: relative;
+    right: 56px;
+    /* animation: GFG 5s infinite linear;  */
+}
+
+.sun {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0px;
+    /* background-color: blue; */
+    position: relative;
+    /* mix-blend-mode: color-burn; */
+    right: 60px;
+}
+
+h1 {
+    z-index: 2;
+    color: white;
+    position: relative;
+    bottom: 95px;
+    left: -40px;
+    background: transparent;
+
+}
+
+.you{
+    /* font-size: 1em; */
+    position: relative;
+    top: -60px;
+}
+
+@keyframes GFG {
+    0% {
+        transform: rotate(0deg) translateY(80px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) translateY(80px) rotate(-360deg);
+    }
+}
+
+@keyframes GFG2 {
+    0% {
+        transform: rotate(0deg) translateY(220px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) translateY(220px) rotate(-360deg);
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    .sun {
+        left: 0px;
+        
+    }
+
+    
+    .me{
+        font-size: 1em;
+    }
+
+    .you{
+        font-size: 1.3em;
+        /* position: relative; */
+        top: -55px;
+    }
+    .small {
+        background-color: red;
+        height: 50px;
+        width: 50px;
+    }
+
+    .Other{
+        left: 15px;
+        position: relative;
+    }
+}
